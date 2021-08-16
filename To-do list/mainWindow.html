@@ -28,11 +28,11 @@
   <body>
     <h1>ADD your Item</h1>
     <ul></ul>
+
     <script>
       const electron = require("electron");    
       const { ipcRenderer } = electron;
       const ul = document.querySelector("ul");
-
 
       // item sending from main js
       ipcRenderer.on("item:add", function (e, item) {
@@ -41,6 +41,20 @@
         li.appendChild(itemText);
         ul.appendChild(li);
       });
+
+// clear items
+      ipcRenderer.on("item:clear", function (e, item) {
+        ul.innerHTML='';
+      });
+
+// remove item
+ul.addEventListener('dblclick',removeItem);
+
+function removeItem(e){
+  e.target.remove();
+}
+
+
     </script>
   </body>
 </html>

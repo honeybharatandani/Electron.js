@@ -89,7 +89,10 @@ const mainMenuTemplate = [
                 }
             },
             {
-                label: 'clear Items'
+                label: 'clear Items',
+                click() {
+                    mainWindow.webContents.send('item:clear');
+                }
             },
             {
                 label: 'Quit',
