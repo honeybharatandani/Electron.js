@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <title>Shopping List</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- <script data-main="scripts/app" src="scripts/require.js"></script> -->
     <style>
       body {
@@ -13,11 +15,11 @@
       }
 
       h1 {
-        background-image: linear-gradient(
+        /* background-image: linear-gradient(
           to right,
           rgba(255, 0, 0, 0),
           rgba(255, 0, 0, 1)
-        );
+        ); */
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -26,7 +28,17 @@
     </style>
   </head>
   <body>
-    <h1>ADD your Item</h1>
+
+<nav>
+<div class="nav-wrapper">
+  <a class="brand-logo center">Shopping List</a>
+</div>
+</nav>
+
+<ul ></ul>
+
+
+    <!-- <h1>ADD your Item</h1> -->
     <ul></ul>
 
     <script>
@@ -36,7 +48,9 @@
 
       // item sending from main js
       ipcRenderer.on("item:add", function (e, item) {
+        ul.className='collection';
         const li = document.createElement("li");
+        li.className='collection-item'
         const itemText = document.createTextNode(item);
         li.appendChild(itemText);
         ul.appendChild(li);
@@ -52,6 +66,9 @@ ul.addEventListener('dblclick',removeItem);
 
 function removeItem(e){
   e.target.remove();
+  if(ul.children.length==0){
+    ul.className='';
+  }
 }
 
 
