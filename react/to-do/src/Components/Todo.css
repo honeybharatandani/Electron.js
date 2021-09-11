@@ -1,0 +1,269 @@
+/* body {
+  background-color: #666;
+}
+
+.main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child-div {
+  text-align: center;
+  margin-top: 1rem;
+}
+figure > img {
+  width: 100px;
+}
+
+input {
+  min-width: 10rem;
+  text-align: center;
+  height: 0.1rem;
+  padding: 1.5rem 1.2rem;
+  font-size: 1.5rem;
+  background-color: #fff;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.4rem;
+  -webkit-box-shadow: inset 0 0.1rem 0.1rem rgb(0 0 0 / 8%);
+  box-shadow: inset 0 0.1rem 0.1rem rgb(0 0 0 / 8%);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+input,
+input:focus,
+input:active,
+input:active:focus {
+  border: none;
+  outline: none;
+}
+
+input:focus {
+  -webkit-box-shadow: 0 0 1.5rem rgb(0, 0, 0);
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+}
+
+.fa {
+  margin-left: -2.5rem;
+  cursor: pointer;
+  pointer-events: auto;
+  z-index: 10;
+  background-color: #fff;
+  color: #666;
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
+  font-size: 2rem;
+}
+
+.fa:hover {
+  color: rgb(223, 90, 28);
+}
+
+.fa-plus:before {
+  content: "\f067";
+  font-size: 1.5rem;
+}
+
+
+.showItems {
+  margin-top: 1rem;
+  display: grid;
+  text-align: center;
+  justify-content: center;
+}
+
+.eachItem {
+  background: #fff;
+  height: 0.8rem;
+  padding: 1.2rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.7rem;
+  margin-left: 1rem;
+  width: 20rem;
+  word-break: break-word;
+  background: rgb(146, 139, 167);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.eachItem:hover {
+  background: rgb(159, 159, 224);
+  color: rgb(52, 51, 56);
+}
+
+.showItems .eachItem h3 {
+  padding-left: 1rem;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.fa-trash-alt,
+.fa-edit {
+  cursor: pointer;
+  pointer-events: auto;
+  z-index: 10;
+  color: rgb(251, 251, 251);
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
+  font-size: 1.2rem;
+}
+
+.addItems .fa-edit {
+  color: rgb(170, 58, 13);
+}
+
+.fa-edit {
+  margin-left: -3.5rem;
+}
+
+.eachItem:hover .fa-trash-alt {
+  color: rgb(214, 47, 61);
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+.effect04 {
+  --uismLinkDisplay: var(--smLinkDisplay, inline-flex);
+  display: var(--uismLinkDisplay);
+  color: #000;
+  outline: solid 2px #000;
+  position: relative;
+  transition-duration: 0.4s;
+  overflow: hidden;
+}
+
+.effect04::before,
+.effect04 span {
+  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  transition-duration: 0.4s;
+}
+
+.effect04:hover {
+  background-color: rgb(43, 42, 44);
+}
+
+.effect04:hover span {
+  -webkit-transform: translateY(-400%) scale(-0.1, 20);
+  transform: translateY(-400%) scale(-0.1, 20);
+}
+
+.effect04::before {
+  content: attr(data-sm-link-text);
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  -webkit-transform: translateY(500%) scale(-0.1, 20);
+  transform: translateY(500%) scale(-0.1, 20);
+}
+
+.effect04:hover::before {
+  letter-spacing: 0.05em;
+  -webkit-transform: translateY(0) scale(1, 1);
+  transform: translateY(0) scale(1, 1);
+} */
+
+body {
+  background-color: #666;
+}
+
+.main-div {
+  justify-content: center;
+  align-items: center;
+}
+figure > img {
+  width: 100px;
+}
+input {
+  min-width: 6rem;
+  text-align: center;
+  height: 0rem;
+  padding: 1.5rem 1.2rem;
+  font-size: 1.5rem;
+  background-color: #fff;
+  border: 0.1rem solid #ccc;
+  border-radius: 0.4rem;
+  -webkit-box-shadow: inset 0 0.1rem 0.1rem rgb(0 0 0 / 8%);
+  box-shadow: inset 0 0.1rem 0.1rem rgb(0 0 0 / 8%);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+.fa {
+  margin-left: -2.5rem;
+  cursor: pointer;
+  pointer-events: auto;
+  z-index: 10;
+  background-color: #fff;
+  color: #666;
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
+  font-size: 2rem;
+}
+
+.fa:hover {
+  color: rgb(223, 90, 28);
+}
+
+.fa-plus:before {
+  content: "\f067";
+  font-size: 1.5rem;
+}
+
+.showItems {
+  margin-top: 1rem;
+  display: grid;
+  text-align: center;
+  justify-content: center;
+}
+
+.eachItem {
+  background: #fff;
+  height: 0.8rem;
+  padding: 1.2rem 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.7rem;
+  margin-left: 1rem;
+  width: 20rem;
+  word-break: break-word;
+  background: rgb(146, 139, 167);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fa-trash-alt,
+.fa-edit {
+  cursor: pointer;
+  pointer-events: auto;
+  z-index: 10;
+  color: rgb(251, 251, 251);
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
+  font-size: 1.2rem;
+}
+
+.addItems .fa-edit {
+  color: rgb(170, 58, 13);
+}
+
+.fa-edit {
+  margin-left: -3.5rem;
+}
+
+.eachItem:hover .fa-trash-alt {
+  color: rgb(214, 47, 61);
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+
+span {
+  background-color: black;
+  color: #fff;
+  padding: 4px 5px 5px 4px;
+  cursor: pointer;
+}
